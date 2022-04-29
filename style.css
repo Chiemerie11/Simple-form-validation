@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    font-family: "Poppins", sans-serif;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://images.unsplash.com/photo-1571974096020-5c2775ac5d47?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fGRlc2t0b3AlMjBjb21wdXRlcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60WFyY2h8MTN8fGRlc2t0b3AlMjBjb21wdXRlcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+
+form
+{
+    border-radius: 20px;
+    width: 300px;
+    padding: 30px;
+    background-color: rgba(0, 0, 0, 0.4);
+    box-shadow: 1px 1px 2px #ffc400ef;
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapper
+{
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+form h1
+{
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+    align-self: center;
+}
+
+form input
+{
+    font-size: 20px;
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 3px solid #0367fd;
+    padding: 14px 10px;
+    width: 220px;
+    outline: none;
+    color: #fff;
+    border-radius: 24px;
+    transition: all 0.2s ease-in;
+}
+
+form input:hover
+{
+    width: 250px;
+    border-color: #ffc400ec;
+}
+
+.username, .password
+{
+    position: relative;
+}
+
+#icon
+{
+    position: absolute;
+    left: 20px;
+    top: 40px;
+    color: rgb(256, 256, 256);
+}
+
+#btn
+{
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 3px solid #ffc400ec;
+    padding: 14px 35px;
+    font-size: 18px;
+    color: rgb(256, 256, 256);
+    border-radius: 20px;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+#btn:hover
+{
+    background-color: #ffc400ca;
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 325px)
+{
+    form
+    {
+        border-radius: 20px;
+        width: 250px;
+        padding: 30px;
+        background-color: rgba(0, 0, 0, 0.4);
+        box-shadow: 1px 1px 2px #ffc400ef;
+        display: flex;
+        flex-direction: column;
+    }
+
+    form input
+    {
+        font-size: 15px;
+        border: 0;
+        background: none;
+        display: block;
+        margin: 20px auto;
+        text-align: center;
+        border: 3px solid #0367fd;
+        padding: 14px 10px 14px 20px;
+        width: 190px;
+        outline: none;
+        color: #fff;
+        border-radius: 24px;
+        transition: all 0.2s ease-in;
+    }
+}
